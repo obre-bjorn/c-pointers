@@ -13,8 +13,13 @@ int main(){
     */
 
 
-// Dynamic memory allocation using malloc, calloc, 
-//1. Using malloc
+// Dynamic memory allocation using malloc(), calloc(), relloc().
+
+//NB: You must include the stdlib.h header to use dynamic memory allocation functions. 
+//The funtion usually return void pointers of which they have to be type casted for insatnce:
+// (*int)malloc(sizeof(int)) in order to be initialized to a variable
+
+//1. Using malloc() function
     int i,numbers,*ptr;
     ptr = (int*)malloc(numbers*sizeof(int));
     printf("Enter number of values: \n");
@@ -30,5 +35,7 @@ int main(){
     };
 
     free(ptr);
+
+    //2. Using calloc function
     return 0;
 }
