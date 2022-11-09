@@ -37,5 +37,7 @@ int main(){
     free(ptr);
 
     //2. Using calloc function
+    //  callloc(howManyBlocksOfMemoryToBeAllocated, sizeof(datatype)) 
+    //      -function takes two parameters
     return 0;
 }
