@@ -3,7 +3,9 @@
 
 
 int main(){
+
 // Static Memory Allocation
+
    /* int a,b;
     int marks[5] = {70,64,45,88,90};
 
